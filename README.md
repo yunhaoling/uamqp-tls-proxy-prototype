@@ -11,7 +11,9 @@ pip install uamqp-1.4.0b1-xxxxxx.whl
 - `proxy_verify` should be the path to the proxy server certificate file
 - `proxy_cert` should be a tuple of both client side certificate and private key files’ paths
 
-Note: there is no change in azure-eventhub, the http proxy config is passed through to the uamqp untouched.
+Notes:
+- the wheels are built based on the draft PR: https://github.com/Azure/azure-uamqp-python/pull/232
+- there is no change in azure-eventhub, the http proxy config is passed through to the uamqp untouched.
 
 ## sample code:
 
