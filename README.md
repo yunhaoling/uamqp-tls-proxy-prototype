@@ -1,6 +1,6 @@
 ## major steps
 
-1. install the 1.4.0b1 uamqp wheel matching OS and python.
+1. install the [1.4.0b1 uamqp wheel](https://github.com/yunhaoling/uamqp-tls-proxy-prototype/tree/main/uamqp_1.4.0b1_tls_proxy_test_wheels) which matches OS and Python version.
 
 ```bash
 pip install uamqp-1.4.0b1-xxxxxx.whl
