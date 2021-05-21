@@ -17,6 +17,8 @@ Notes:
 
 ## sample code:
 
+### EventHubProducerClient and EventHubConsumerClient
+
 ```python
 import os
 from azure.eventhub import EventData, EventHubConsumerClient, EventHubProducerClient
@@ -53,6 +55,43 @@ consumer_client = EventHubConsumerClient.from_connection_string(
     eventhub_name=EVENTHUB_NAME,
     http_proxy=HTTP_PROXY
 )
+
+# application code
+```
+
+
+### ServiceBusClient
+
+```python
+import os
+from azure.servicebus import ServiceBusClient
+
+CONNECTION_STR = os.environ['SERVICE_BUS_CONNECTION_STR']
+
+
+# proxy host name
+proxy_hostname = "<host_name>"
+# proxy port
+proxy_port = 443
+# path to the proxy server certificate file
+proxy_verify = r"<server_cert.pem>"
+# a tuple of both client side certificate and private key files’ paths
+proxy_cert = (r"<client_cert.pem>", r"<client_private_key.pem>")
+
+
+HTTP_PROXY = {
+    'proxy_hostname': proxy_hostname,
+    'proxy_port': proxy_port,
+    "proxy_verify": proxy_verify,
+    "proxy_cert": proxy_cert
+}
+
+
+servicebus_client = ServiceBusClient.from_connection_string(
+    conn_str=CONNECTION_STR,
+    http_proxy=HTTP_PROXY
+)
+
 
 # application code
 ```
