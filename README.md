@@ -27,13 +27,13 @@ CONNECTION_STR = os.environ["EVENT_HUB_CONN_STR"]
 EVENTHUB_NAME = os.environ['EVENT_HUB_NAME']
 
 # proxy host name
-proxy_hostname = "<host_name>"
+proxy_hostname = "<host_name>"  # replace with your proxy host name
 # proxy port
-proxy_port = 443
+proxy_port = 443  # replace with your proxy port
 # path to the proxy server certificate file
-proxy_verify = r"<server_cert.pem>"
+proxy_verify = r"<server_cert.pem>"  # optional, replace with path to your proxy server cert
 # a tuple of both client side certificate and private key files’ paths
-proxy_cert = (r"<client_cert.pem>", r"<client_private_key.pem>")
+proxy_cert = (r"<client_cert.pem>", r"<client_private_key.pem>")  # optional, replace with paths to your client side cert and private key
 
 
 HTTP_PROXY = {
@@ -70,13 +70,13 @@ CONNECTION_STR = os.environ['SERVICE_BUS_CONNECTION_STR']
 
 
 # proxy host name
-proxy_hostname = "<host_name>"
+proxy_hostname = "<host_name>"  # replace with your proxy host name
 # proxy port
-proxy_port = 443
+proxy_port = 443  # replace with your proxy port
 # path to the proxy server certificate file
-proxy_verify = r"<server_cert.pem>"
+proxy_verify = r"<server_cert.pem>"  # optional, replace with path to your proxy server cert
 # a tuple of both client side certificate and private key files’ paths
-proxy_cert = (r"<client_cert.pem>", r"<client_private_key.pem>")
+proxy_cert = (r"<client_cert.pem>", r"<client_private_key.pem>")  # optional, replace with paths to your client side cert and private key
 
 
 HTTP_PROXY = {
